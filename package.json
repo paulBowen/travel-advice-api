@@ -1,0 +1,16 @@
+{
+  "name": "travel-advice-api",
+  "version": "1.0.0",
+  "description": "Wrapper for DFAT's smartraveller website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js &> api.log"
+  },
+  "author": "Paul Bowen",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "1",
+    "express": "4",
+    "request": "2"
+  }
+}
