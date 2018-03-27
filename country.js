@@ -52,7 +52,7 @@ router.get("/:title", (req, res) => {
 
 function parseBody(cachedCountry, body) {
     const $ = cheerio.load(body);
-    const selection = $(".span-md-6.push-md-3.content__main", "#rs_read_this").children().eq(4).html();
+    const selection = $(".content__main", "#rs_read_this").children().eq(1).html();
 
     if (!selection) {
         throw new Error(`Could not make selection from info page for ${cachedCountry.normalizedTitle}`);
